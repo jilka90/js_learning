@@ -1,10 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <script>
+        function myFunction() {
+        document.getElementById("demo3").innerHTML = "Script";
+        }
+    </script>
 </head>
+
 <body>
-    <h1>helllo</h1>
+    <h1>javasrcipt Code </h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+        click me to know the date
+    </button>
+    <p id="demo"> this was the p id js usage now lets see with the origninal text change in js </p>
+    <p id="demo1"> origninal text change in js </p>
+
+    <button type="button" onclick='document.getElementById("demo1").innerHTML="hello guys"'>click</button>
+    <p>we cana lso write in the script tag</p>
+    <p id="demo2"></p>
+    <h4>now we will see the function how we create in the js i t is same we just have to define one function outside the innerhtml line thats it</h4>
+    <p id="demo3"></p>
+    <button type="button" onclick="myFunction()">try me</button>
 </body>
+
 </html>
