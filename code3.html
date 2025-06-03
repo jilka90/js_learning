@@ -1,9 +1,11 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h3>javascript numbers</h3>
     <p>here the number can be written in with or without decimal</p>
@@ -11,13 +13,56 @@
     <p id="demo1"></p> it is accepting both single and double qoutes
     <p id="demo2"></p>
     <p id="demo3"></p>
-    <script>
-        let x;
-        x=120
-        document.getElementById("demo").innerHTML=x
-        document.getElementById("demo1").innerHTML=5 + 22 * 5 + 9
-        document.getElementById("demo2").innerHTML="helllo"
-        document.getElementById("demo3").innerHTML="javascript"
+    <h3>arithmetic operator</h3>
+    <script> 
+        let a=3;
+        let b=4;
+        let c=a+b;
+        document.getElementById("demo3").innerHTML=c;
+        try {
+            const c = 5;
+            c = 50;
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err;
+        }
+        hel="qazwsxedc";
+        document.getElementById("demo1").innerHTML = hel;
+
+        // let x;
+        // var y;
+        // let lastname, lastn;
+        // lastn = "qwert";
+        // lastname = "asdfg";
+        // y = 10;
+        // x = 120;
+        // document.getElementById("demo").innerHTML = x + 10 + y
+        // document.getElementById("demo1").innerHTML = 5 + 22 * 5 + 9
+        // document.getElementById("demo2").innerHTML = "helllo" + " " + "world"
+        // document.getElementById("demo3").innerHTML = "javascript"
+        // document.getElementById("demo").innerHTML = lastn
+        // document.getElementById("demo3").innerHTML = lastname
+        const car={ type:"flat",model:"500",color:"black"};
+        car.color="red";
+        car.owner="johnson";
+        document.getElementById("demo").innerHTML ="car owner is " +  car.color + " "+ car.owner;
+        // ṇumbers
+        let length = 16;
+        let weight = 5.6;  
+        // ṣtring
+        let x = "one"
+        let y = "two"
+        // boolean'
+        let x1= true;
+        let x2=false;
+        // object
+        const person={firstName:"abx", lastname:"Doe"};
+        // array objects
+        const cars=["one","two","three"];
+        // date objects
+        const date = new Date("2022-03-25"); 
+        
+
     </script>
 </body>
 </html>

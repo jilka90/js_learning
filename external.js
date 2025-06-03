@@ -1,3 +1,3 @@
-function myfunction() { 
-    document.getElementById("demo").innerHTML="external data";
+function myfunction( a , b) { 
+    return a*b;
  }

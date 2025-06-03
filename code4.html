@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>javascript function</h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    
+    <script>
+        // let text = "Hello, World!" + toCelsius (77)+"Celsius"; document.getElementById("demo").innerHTML=text;
+        // function toCelsius(f){
+        //     return (f - 32) * 5/9;
+        // }
+        const person = {
+            name: "John",
+            lname: "Doe",
+            age: 30,
+            eyeColor: "blue",
+        };
+        const person1 = {};
+        person1.name = "sam";
+        person1.lname = "wer";
+        person1.age = 40;
+        person1.eyeColor = "blue";
+
+        const per = new Object();
+        per.name = "werty";
+        per.lname = "won";
+        per.age = 20;
+        per.eyeColor = "blue";
+        document.getElementById("demo").innerHTML = person.lname + " " + person.name + " is " + person.age + " years old.";
+        document.getElementById("demo2").innerHTML = person1.lname + " " + person1.name + " is " + person1.age + " years old.";
+        document.getElementById("demo3").innerHTML = per.lname + " " + per.name + " is " + per.age + " years old.";
+    </script>
+</body>
+
+</html>
