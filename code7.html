@@ -2,29 +2,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>js numbers</title>
 </head>
 <body>
     <p id="demo"></p>
     <script>
-        let header ="templates";
-        let tags =["a","b","c"];
-        let x = 1234567891025489;
-        let y = 12347589612365456058965;
-        // let a = 20;
-        let a = NaN;
-        // let b = "30";  
-        // let b = 30;  
-        let p=100/ "Apple";
-        // document.getElementById("demo").innerHTML= x + "<br>" + y + " ";
-        document.getElementById("demo").innerHTML= typeof a;
-        // document.getElementById("demo").innerHTML = isNaN();
-        let html = `<h1>${header}</h1><ul>`;
-            for(const x of tags){
-                html += `<li>${x}</li>`
-            }
-            html += `</ul>`;
-            // document.getElementById('demo').innerHTML=html;
+        // let x= 0xFF;
+        // let num1 = -2/0;
+        // let txt = "";
+        // while(num1 != Infinity){
+        //     num1 = num1 * num1;
+        //     txt = txt + num1 + " <br>";
+
+        // }
+        // document.getElementById("demo").innerHTML= num1 + "<br>";
+        // document.getElementById("demo").innerHTML= "0xFF = " + x;
+        // let num=32;
+        let x=125;
+        let y= new Number(125);
+        // document.getElementById("demo").innerHTML="Decimal 32 = " + "<br><br>"+
+        // "hexatrigesimal (base 36):" + num.toString(36) + "<br>" +
+        // "Duotrigesimal (base 32):" + num.toString(32) + "<br>"
+        // document.getElementById("demo").innerHTML= typeof x + " <br>" + typeof y;
+        // document.getElementById("demo").innerHTML= (x==y);
+        document.getElementById("demo").innerHTML= (x===y);
+
+
+
+
+
+
     </script>
+    
 </body>
 </html>
