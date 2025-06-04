@@ -11,7 +11,12 @@
     <p id="demo"></p>
     <p id="demo2"></p>
     <p id="demo3"></p>
-    
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
     <script>
         // let text = "Hello, World!" + toCelsius (77)+"Celsius"; document.getElementById("demo").innerHTML=text;
         // function toCelsius(f){
@@ -34,10 +39,65 @@
         per.lname = "won";
         per.age = 20;
         per.eyeColor = "blue";
-        document.getElementById("demo").innerHTML = person.lname + " " + person.name + " is " + person.age + " years old.";
+        per.national = "english";
+
+        delete person.age;
+
+        const myob = {
+            name: "john",
+            lname: "doe",
+            age: "25",
+            myhob: {
+                sport: "cricket",
+                hobby: "reading",
+                car: "BMW"
+            }
+        }
+        const one = {
+            fname: "Saniya",
+            lname: "Shinde",
+            id: 5566,
+            fullname: function () {
+                // return this.fname + " " + this.lname + " " + this.id + " ";
+                return (this.fname + " " + this.lname + " " + this.id + " ").toUpperCase();
+            }
+        }
+        const two = {
+            fname: "Saniya",
+            lname: "Shinde",
+            id: 5566,
+            fullname: function () {
+                // return this.fname + " " + this.lname + " " + this.id + " ";
+                return (this.fname + " " + this.lname + " " + this.id + " ").toUpperCase();
+            }
+        }
+        // build text
+        let text="";
+        for(let x in person){
+            text += person[x] + " ";
+        }
+        // create an array 
+        const myArray = Object.values(per);
+        document.getElementById("demo8").innerHTML=two;
+        document.getElementById("demo7").innerHTML = one.fullname();
+        document.getElementById("demo5").innerHTML = myob.name + " " + myob.lname + " " + myob.age + " " + myob.myhob["car"] + " ";
+        document.getElementById("demo6").innerHTML = myob.name + " " + myob.lname + " " + myob.age + " " + myob.myhob.hobby + " ";
+        document.getElementById("demo6").innerHTML = myob.name + " " + myob.lname + " " + myob.age + " " + myob.myhob.hobby + " ";
+        // document.getElementById("demo").innerHTML = person.lname + " " + person.name + " is " + person.age + " years old." +" "+ person.eyeColor + " eyes";
+        document.getElementById("demo").innerHTML = text;
         document.getElementById("demo2").innerHTML = person1.lname + " " + person1.name + " is " + person1.age + " years old.";
-        document.getElementById("demo3").innerHTML = per.lname + " " + per.name + " is " + per.age + " years old.";
-    </script>
+        // document.getElementById("demo3").innerHTML = per.lname + " " + per.name + " is " + per.age + " years old." + " and " + per.national + " national";
+        document.getElementById("demo3").innerHTML= myArray;
+
+        
+        // object entries
+        const fruits = { banana : 5, orange : 7, mango : 3, pineapple : 2 };
+        let text1 = " ";
+        for (let [fruit,amount] of Object.entries(fruits)) {
+            text1 += fruit + " = " + amount + " " + "<br>";
+        }
+        document.getElementById("demo").innerHTML=text1;
+    </script> 
 </body>
 
 </html>

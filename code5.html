@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object constructor</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h3>onclick attribute</h3>
+    <button onclick="document.getElementById('demo1').innerHTML=Date()">click here?</button>
+    <button onmouseout="innerHTML=Date()">click here?</button>
+    <button onmouseover="displayDate()">click here?</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+<script>
+    function displayDate() {
+        document.getElementById("demo1").innerHTML = Date();
+    }
+    // Constructor function for person objects
+    function Person(first , last, age) {
+        this.first = first;
+        this.last = last;
+        this.age=age;
+    }
+    // create person object 
+    const myFather = new Person("abc","John",50);
+    // display age
+    document.getElementById("demo").innerHTML="My Father age is "+ myFather.age + " years. " ;
+    let text="heelo world";
+    // document.getElementById("demo2").innerHTML= text;
+    document.getElementById("demo2").innerHTML= text.length;
+</script>
+</body>
+</html>
