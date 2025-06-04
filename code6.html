@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string and templates</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let str = "Hello, World!";
+        let text = "apple , banana , orange , mango , grapes";
+        // let part =  text.slice(-15,-1);
+        // let part =  text.indexOf("banana");
+        // let part1 = str.substr(1,8);
+        let sname="hiii";
+        let sage= 25; 
+        let price =10;
+        let VAT=0.24;
+        let total= `total :${(price * (1 + VAT)) .toFixed(1)} `;
+        document.getElementById("demo").innerHTML = total;
+        let text1 =`Welcome ${sname} , ${sage}`; 
+        // document.getElementById("demo").innerHTML = text1;
+    </script>
+</body>
+</html>
