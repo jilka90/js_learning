@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body> 
+    <p id="demo"> </p>
+    <p id="demo1"> </p>
+    <p id="demo2"> </p>
+    <p id="demo3"> </p>
+    <p id="demo4"> </p>
+    <p id="demo5"> </p>
+    <p id="demo6"> </p>
+    <p id="demo7"> </p>
+    <p id="demo8"> </p>
+    <p id="demo9"> </p>
+    <p id="demo10"> </p>
+<script>
+// document.getElementById("demo").innerHTML= Boolean(10>9)
+document.getElementById("demo").innerHTML= 10>9;
+document.getElementById("demo1").innerHTML=
+"100 is " + Boolean(100) + "<br>"+
+"3.14 is " + Boolean(3.14) + "<br>"+
+"-15 is " + Boolean(-15) + "<br>"+
+"any(not empty) " + Boolean("hello") + "<br>"+
+"even the string is false " + Boolean("false") + "<br>";
+"expression except zero " + Boolean(1+7+3.14) + "<br>";
+// let x =false;
+let x =new Boolean(false);
+let y =new Boolean(false);
+// document.getElementById("demo2").innerHTML=Boolean(x);
+document.getElementById("demo2").innerHTML=(x===y);
+</script>
+</body>
+</html>
