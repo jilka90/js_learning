@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else and switch </title>
+</head>
+
+<body>
+    <h3>if else and switch</h3>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        //         if (new Date().getHours() < 18) {
+        //             document.getElementById("demo").innerHTML = "Goood day dear";
+        //         }
+
+        //         const hour = new Date().getHours();
+        //         let greeting;
+
+        // // if else statment
+        //         if (hour < 20) {
+        //             greeting = "Good day";
+        //         }
+        //         else {
+        //             greeting = "good";
+        //         }
+        // else if statement
+        const time = new Date().getHours();
+        let greeting1;
+        if (time < 10) {
+            greeting1 = "gm";
+        }
+        else if (time < 20) {
+            greeting1 = "gn";
+        }
+        else {
+            greeting1 = "bye"
+        }
+        document.getElementById("demo2").innerHTML = greeting1;
+
+        let text;
+        if (Math.random() < 0.5) {
+            text = "<a href='https://w3schools.com'>Visit W3Schools</a>"
+        }
+        else {
+            text = "<a https://www.w3schools.com/js/tryit.asp?filename=tryjs_randomlink> random link</a>"
+        }
+        document.getElementById("demo3").innerHTML = text;
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("demo4").innerHTML = "Today is " + day;
+        let day1;
+        switch (new Date().getDay()) {
+            case 0:
+                text = "Today";
+                break;
+            case 1:
+            // text = "yesterday";
+            // break;
+            case 2:
+                text = "tomorrow";
+                break;
+            default:
+                text = "pata nahi";
+
+        }
+        document.getElementById("demo5").innerHTML = text;
+
+        let x = "0";
+        switch (x) {
+            case 0:
+                text = "up";
+                break;
+            case 1:
+                text = "down";
+                break;
+           default:
+                text = "nothing";
+
+        }
+        document.getElementById("demo6").innerHTML= text;
+
+
+    </script>
+
+</body>
+
+</html>
