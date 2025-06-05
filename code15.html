@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const car=["abc","xd"];
+         cars=["abc","xd"];
+         var cars
+
+        // document.getElementById("demo").innerHTML=car;
+        // const d = new Date();
+        // const d = new Date("October 13, 2024 11:13:00");
+        // const d= new Date(2018,11,24,10,33,20,0);
+        // const d= new Date(2018,5,4,10,33,30);
+        // const d = new Date("2020-02-25");
+        // const d1=new Date(-100000000000000)
+        // const d= new Date("24" * "60 " * " 60 " * "1000")
+        // const d = new Date("03/02/2021");
+        // const d = new Date(" 05 oct  2021");
+        // let msec = Date.parse("oct 25 2009");
+        // const d = new Date(msec);
+        // const d = new Date("2021-03-24");
+        // const d = new Date();
+        const months=["jan","feb","mar","apr","may","june"];
+        // const d= new Date("2021-03-25");
+        const d= new Date();
+        let month = months[d.getMonth()];
+        // d.getFullYear();
+        // d.setDate("15")
+        d.getTimezoneOffset(2022)
+    
+        // d.toString();
+        // document.getElementById("demo1").innerHTML= d.getFullYear();
+        // document.getElementById("demo1").innerHTML=   d;
+        let text;
+        const today = new Date();
+        const someday = new Date();
+        someday .setFullYear(2020,0,14);
+        if (someday > today){
+            text= "today is before jan 2100 date 14";
+        }
+        else{
+            text= "today is after jan 2100 date 14";
+        }
+        document.getElementById("demo1").innerHTML= text;
+    </script>
+    
+</body>
+</html>
