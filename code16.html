@@ -1,2 +1,63 @@
-const cars = ["Saab", "Volvo", "BMW"];
-document.getElementById("demo").innerHTML = cars;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="document.getElementById('demo').innerHTML = get(0,10)">click</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <script>
+        // document.getElementById("demo").innerHTML = Math.PI;
+        // document.getElementById("demo1").innerHTML = Math.E + " E";
+        document.getElementById("demo2").innerHTML = Math.LN10 + " LN10";
+        document.getElementById("demo3").innerHTML = Math.LN2;
+        document.getElementById("demo4").innerHTML = Math.LOG10E;
+        document.getElementById("demo5").innerHTML = Math.LOG2E;
+        // document.getElementById("demo6").innerHTML = Math.SQRT1_2;
+        // document.getElementById("demo7").innerHTML = Math.SQRT2;
+        // document.getElementById("demo8").innerHTML = Math.abs();
+        // document.getElementById("demo9").innerHTML = Math.acos();
+        // document.getElementById("demo10").innerHTML = Math.asin();
+        // document.getElementById("demo11").innerHTML = Math.acosh();
+        document.getElementById("demo8").innerHTML = Math.round(2.8);
+        document.getElementById("demo9").innerHTML = Math.ceil(2.8);
+        // document.getElementById("demo10").innerHTML = Math.floor(2.8);
+        // document.getElementById("demo11").innerHTML = Math.trunc(2.8);
+        document.getElementById("demo11").innerHTML = Math.abs(2.8);
+        document.getElementById("demo7").innerHTML = Math.trunc(2.8);
+        document.getElementById("demo6").innerHTML = Math.pow(8,2);
+        document.getElementById("demo10").innerHTML = Math.sqrt(8);
+        document.getElementById("demo12").innerHTML = Math.sin(90 * Math.PI/180);
+        document.getElementById("demo13").innerHTML = Math.cos(0 * Math.PI/180);
+        // document.getElementById("demo14").innerHTML = Math.min(1,15,58,75,15,96);
+        // document.getElementById("demo14").innerHTML = Math.random();
+        // document.getElementById("demo14").innerHTML = Math.log10(1000);
+        // document.getElementById("demo14").innerHTML = Math.random();
+        // document.getElementById("demo1").innerHTML = Math.floor(Math.random() * 101)+ 1; 
+         function get(min,max){
+            return Math.floor(Math.random()* (max - min + 1 ))+ min ;
+         }
+        
+        
+
+
+    </script>
+</body>
+</html>
