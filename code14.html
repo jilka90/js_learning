@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        const numbers=[12,43,56,89,34,65,24,88];
+        const number1=numbers.map(myFunction)
+
+        // let t= "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML= number1;
+
+        function myFunction(value,index,array){
+            // t += value + "<br>";
+            return value * 2
+        }
+        const myarr=[2,4,5,6,5,];
+        const newa= myarr.flatMap(x =>[x,x *10]);
+        document.getElementById("demo1").innerHTML=newa;
+
+        const num1 = [34,54,23,9, 18,45,67,87];
+        const over18 =num1.filter(myfub) ;
+        document.getElementById("demo2").innerHTML=over18;
+        
+        function myfub (value,index,array){
+            return value >18;
+        }
+         const number3=[45,85,78,96,20,30,10];
+        //  let sum=number3.reduce(myfub);
+        //  let sum=number3.reduceRight(myfub);
+         let someOver18=number3.some(myfub);
+        //  let sum=number3.reduce(myfub,120);
+
+         document.getElementById("demo3").innerHTML= someOver18;
+         function myfub(total,value,index,array){
+         function myfub(total,value){
+            return total + value;
+         }}
+         const my=Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+         document.getElementById("demo4").innerHTML=my;
+
+        //  const f1=["apple","lemon"];
+        //  const keys=f1.keys();
+
+        //  let text= "";
+        //  for(let x of keys){
+        //     text += x + "<br>";
+        //  }
+            const f1=["apple","lemon"];
+            const f= f1.entries();
+            for (let x of f ){
+                document.getElementById("demo5").innerHTML+=x + "<br>";
+
+            }
+        //  document.getElementById("demo5").innerHTML=text;
+        const months=["jan","feb","mar","apr"];
+        const mym=months.with(2,"oct")
+                 document.getElementById("demo6").innerHTML=mym;
+
+
+        // const arr1 =[1,3,4,5,6,7];
+        // const arr2 =[7,8,5,3,2,1,3,0,4,6];
+        // const arr3 =[...arr1,...arr2];
+        // const arr3 =[...arr1];
+        // let minValue = Math.min(...arr1);
+        // let maxValue = Math.max(...arr1);
+        // document.getElementById("demo7").innerHTML=arr3;
+        // document.getElementById("demo7").innerHTML="min"+ minValue+ "max "+ maxValue;
+        let a,rest;
+        const arr1 =[1,3,4,5,6,7];
+        [a, ...rest]= arr1;
+        document.getElementById("demo7").innerHTML="The rest is "+ rest;
+        
+
+
+
+
+    </script>
+</body>
+</html>
