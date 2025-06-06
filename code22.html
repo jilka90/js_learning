@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <a href="javascript:void(0);">Useless link</a>
+    </p>
+    <p>
+        <a href="javascript:void(document.body.style.backgroundColor='pink');">change bg color</a>
+    </p>
+    <!-- <p id="demo"></p> -->
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo1"></p>
+    <button type="button" onclick="myfunction()">test </button>
+    <button onclick="this.style.display='none'">click</button>
+    <input type="text" id="p1">
+    <script>
+        const fruits = ["Apple", "Mango"];
+        let mylist = fruits.toString();
+        // document.getElementById("demo").innerHTML = mylist;
+        // const d = new Date();
+        const d = 56;
+        let text = d.toString(2);
+        document.getElementById("demo1").innerHTML = text;
+
+        let person = {
+            name: "suresh",
+            lastname: "rashi"
+        }
+        let a = person.toString();
+        // document.getElementById("demo2").innerHTML = a;
+
+        document.getElementById("demo3").innerHTML =
+            Number("3.14") + " <br>" +
+            Number(Math.PI) + "<br>" +
+            Number(" ") + "<br>" +
+            Number("") + "<br>" +
+            Number("44 85") + "<br>" +
+            Number("soniya") + "<br>";
+
+        // let y = "5";
+        // let x = this;
+        // document.getElementById("demo4").innerHTML = tx;
+
+        // let c = 125;
+        // document.getElementById("demo5").innerHTML =
+        //     String(c) + "<br>" +
+        //     (159).toString() + "<br>" +
+        //     String(1 - 3);
+
+        // document.getElementById("demo6").innerHTML =
+        //     (5 + null) + "<br> " +
+        //     ("5" + null) + "" +
+        //     (5 + 2) + "" +
+        //     ("5" - 5) + "" +
+        //     (5 / 2) + "" +
+        //     (5 / "2") + ""
+
+
+        // const per = {
+        //     f: "anc",
+        //     g: "an",
+        //     h: "a",
+        //     i: "ajenc",
+        //     j: "anbdcdc",
+        // }
+
+        // let { f, g, name = "sai" } = per;
+        // let { f: nam1 } = per;
+        // document.getElementById("demo7").innerHTML = f + g + nam1;
+
+        // let nam = "Schools"
+        // let [a1, , , , , a2] = name;
+        // document.getElementById("demo8").innerHTML = a1;
+
+        // const fruits1 = ["banana", "pineapple"];
+        // const { [0]: fruits2, [1]: fruits3 } = fruits1;
+        // const numbers = [10, 20, 30, 50];
+        const [o, b, ...rest] = numbers;
+        // document.getElementById("demo9").innerHTML = "o" + o + " "+ rest;
+        // document.getElementById("demo9").innerHTML= "fruits1" + fruits2 + fruits3; 
+
+        const f2 = new Map([
+            ["apple", 400],
+            ["apple1", 800],
+            ["apple2", 900]
+        ]);
+
+        let x1 = "";
+        for (const [key, value] of f2) {
+            x1 += "<p>" + key + " " + value;
+        }
+        // document.getElementById("demo9").innerHTML = x1;
+        let j = "1";
+        let i = "3";
+        [i, j] = [j, i];
+        // document.getElementById("demo9").innerHTML = i + j;
+        // document.getElementById("demo10").innerHTML= -5 >>> 1;
+
+        // document.getElementById("demo").innerHTML = dec2bi(-5);
+        document.getElementById("demo").innerHTML= myfunction();
+    
+        function myfunction() {
+            // return (dec >>> 0).toString(2);
+            return this;
+        }
+
+        function bi2des(bin) {
+            return parseInt(bin, 2).toString(10);
+        }
+
+        let n1 = "Visual Studio1";
+        // let n2= n1.replace(/s/,"w");
+        let n2 = n1.match(/\o?/g);
+        // document.getElementById("demo").innerHTML= n2;
+        // let t= document.getElementById("p01").innerHTML;
+
+        const pattern = /e/;
+        // document.getElementById("demo").innerHTML=pattern.test(t).
+
+        try {
+            addalert("welcome guest");
+        }
+        catch (err) {
+            // document.getElementById("demo10").innerHTML=err.message;
+        }
+
+        function myfunction() {
+            const message = document.getElementById("p1");
+            message.innerHTML = "";
+            let x = document.getElementById("demo9").value;
+            try {
+
+                if (x.trim() == "") throw "empty";
+                if (isNaN(x)) throw "number nahi hai ";
+                x = Number(x);
+                if (x < 5) throw "too low";
+                if (x > 10) throw "too high";
+            }
+            catch {
+                message.innerHTML = "input" + err;
+            }
+            finally {
+                // document.getElementById("demo").value = " ";
+            }
+            let num = 1;
+            try {
+                // eval("alert(hello)");
+                // num.toUppercase();
+                decodeURI("%%%%%");
+
+            }
+            catch (err) {
+                // document.getElementById("demo11").innerHTML = err.name;
+            }
+
+        }
+
+        myfunction1();
+        function myfunction1() {
+            let carname = "Volvo";
+            document.getElementById("demo11").innerHTML = typeof carname + " " + carname;
+
+        }
+        document.getElementById("demo12").innerHTML = typeof carname;
+
+        x = 9; y = 5
+        // elem = document.getElementById("demo");
+        elem.innerHTML = x + y;
+
+        "use strict";
+        x = 3.14;
+
+        const pers = {
+            fname: "abv",
+            name: "pdq",
+            fullname: function(){
+                return this.fname + this.name;
+            }
+        }
+        
+        let he=" ";
+        he=function(){
+            return "hello";
+        }
+        document.getElementById("demo13").innerHTML = he();
+
+
+        class car{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+
+        }
+        const myCar1= new car("ge",2000)
+        const myCar2= new car("gekko",2000)
+
+        document.getElementById("demo2").innerHTML= myCar1.name + myCar2.name;
+        
+
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <script>
+        // let text= "";
+        // for (let i = 0;i < 10 ;i++){
+        //     if (i===3) {continue;}
+        //     text += "The number is" + i+ "<br>";
+        // }
+        // // document.getElementById("demo").innerHTML=text;
+
+        // const cars=["BMW","Vovle","Juipter","Saab"];
+        // list:{
+        //     text += cars[0] + "<br>";
+        //     text += cars[1] + "<br>";
+        //     break list;
+        //     text += cars[2] + "<br>";
+        //     text += cars[3] + "<br>";
+        // }
+
+        // document.getElementById("demo").innerHTML=text;
+
+        // const name= "Schools";
+        // const letters=["h","o","p"];
+        // const letter = new Set(["a","b","c"]);
+        // let text2= " ";
+        // for (const  x of letter ){
+        //     text2 += x + "<br>";
+        // }
+        // const let1=new Set();
+        // let1.add("1");
+        // let1.add("2");
+        // let1.add("3");
+        // let1.add("4");
+        // document.getElementById("demo1").innerHTML=let1.size;
+        // const let2 = new Set(["a","b","c"]);
+        // document.getElementById("demo1").innerHTML= let2 instanceof Set;
+        // const letters=new Set(["a","b","c"]);
+        // answer= letters .has("a");
+        // document.getElementById("demo2").innerHTML = "Answer is"+ answer;
+
+        // const let3 = new Set(["a","b","c"]);
+        //  let d= " ";
+        //  letters.forEach(function(value){
+        //     d += value + "<br>";
+        //  })
+
+
+        const l1 = new Set(["a", "b", "c"]);
+        const myin = l1.entries();
+
+        let p = "";
+        for (const entry of myin) {
+            p += entry + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = p;
+
+        const play = new Map([
+            ["apples", 500],
+            ["banana", 100],
+            ["grapes", 900],
+            ["coconut", 50],
+            ["cherry", 700],
+            ["mango", 60],
+            ["orange", 800]
+        ]);
+        play.delete("apples")
+        // play.clear("apples")
+        play.has("apples")
+
+        // let numb=play.get("mango")
+        // document.getElementById("demo4").innerHTML=typeof play;
+        // document.getElementById("demo4").innerHTML=play.size;
+
+        // let t="";
+        // play.forEach(function(value,key){
+        //     t += key + " = " + value + "<br>";
+        // })
+
+        // let t1= "";
+        // for (const x of play.values()){
+        //     t1 += x+ "<br>";
+        // }
+        // document.getElementById("demo4").innerHTML=t1;
+        // const a = {name :"a"}
+        // const b = {name :"b"}
+        // const c = {name :"c"}
+        // const d = {name :"d"}
+        // const e = {name :"e"}
+
+        // const player= new Map();
+        // player.set("b",500);
+        // player.set("c",500);
+        // player.set("a",500);
+        // player.set("d",500);
+        // player.set("e",500);
+
+        // function mycall({quantity}){
+        //     return quantity > 200 ? "ok" : "low";
+        // }
+
+        // const result = Map.groupBy(player,mycall)
+
+        // let text = "these fruits are ok:";
+        // for (let x of result.get("ok")){
+        //     text += x.name + " " + x.quantity +" ";
+
+        // }
+
+        // text+="<br> are low ";
+        // for (let x of result.get("low")){
+        //      text += x.name + " " + x.quantity +" ";
+
+        // }
+        // document.getElementById("demo5").innerHTML= text;
+        // console.log(result.get("ok"));
+
+        document.getElementById("demo").innerHTML =
+            "John is " + typeof "John" + "<br><br>" +
+            "('John' + 'is') " + typeof "('John' + 'is') " + "<br><br>" +
+            "John is " + typeof "John is" + "<br><br>" +
+            "3.14 " + typeof "3.14" + "<br><br>" +
+            "(33 + 66) " + typeof "(33 + 66) " + "<br><br>" +
+            "NAN" + typeof NAN + "<br><br>" +
+            "TRue " + typeof TRue + "<br><br>" +
+            "1234n " + typeof 1234n + "<br><br>" +
+            "Symbol() " + typeof + "<br><br>";
+
+
+        // document.getElementById("demo6").innerHTML=
+        // typeof{name:"john"} +
+        // typeof [1,2,3,4,5,6,7] + 
+        // typeof new Map() + 
+        // typeof new Set() +
+
+        // typeof function myfunction(){
+
+        // };
+        // const time = new Date();
+        // const cars=["BMW","Vovle","Juipter","Saab"];
+        const play1 = new Map([
+            ["apples", 500],
+            ["banana", 100],
+            ["grapes", 900],
+            ["coconut", 50],
+            ["cherry", 700]
+        ]);
+        // document.getElementById("demo"),innerHTML= (play1.constructor === Array);
+        // document.getElementById("demo6").innerHTML= "Array" + (cars instanceof Array);
+        let cars;
+        document.getElementById("demo6").innerHTML = cars +
+            typeof cars;
+        let car  = {
+            name: "a",
+            lname: "b",
+            sname: "c",
+            rname: "d",
+            yname: "e",
+        };
+        car = null
+
+        document.getElementById("demo7").innerHTML = typeof car;
+        car = undefined;
+        // constructor 
+         document.getElementById("demo").innerHTML=
+         "john".constructor + "<br>"+
+         3.14.constructor + "<br>"+
+         false.constructor + "<br>"+
+         1234n.constructor + "<br>"+
+         {}.constructor + "<br>"+
+         [].constructor+ "<br>"+
+         new Date().constructor + "<br>"+
+         new Set().constructor + "<br>"+
+         new Map().constructor + "<br>"+
+         function(){}.constructor;
+
+         const time = new Date();
+         document.getElementById("demo8").innerHTML=(time.constructor === Date);
+
+
+
+    </script>
+</body>
+
+</html>
